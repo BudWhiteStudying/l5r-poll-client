@@ -1,0 +1,28 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link href='./shared.css'rel="stylesheet">
+	<link href='./main.css' media="screen and (min-device-width: 480px)" rel="stylesheet">
+	<link href='./mobile.css' media="screen and (max-device-width: 480px)" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src='main.js'></script>
+</head>
+<body>
+	<div id='loading-spinner' class='loading-spinner'></div>
+	<div id='poll-container' class='poll-container'>
+		<div id='session-label' class='session-label'></div>
+		<div id='session-title-label' class='session-title-label'></div>
+		<div id='what-went-well-section' class='section'>
+			<p><label id='what-went-well-label' for='what-went-well-input' class='section-label'>Cosa &egrave; andato bene?</label></p>
+			<textarea id='what-went-well-input' name='what-went-well-input' class='section-input' placeholder="e.g. ho avuto l'occasione di giocare i punti di forza del mio PG, oppure la narrazione &egrave; stata coinvolgente, etc." rows='5' oninput="hideError()"></textarea>
+		</div>
+		<div id='what-went-wrong-section'>
+			<p><label id='what-went-wrong-label' class='section-label'>Cosa cambierei?</label></p>
+			<textarea id='what-went-wrong-input' class='section-input' placeholder="e.g. decisioni troppo obbligate (railroading), oppure troppa/troppo poca azione/combattimento, etc." rows='5' oninput="hideError()"></textarea>
+		</div>
+		<div id='error-container' class='error-container'>Messaggio di errore</div>
+		<div id='submit-button' class='submit-button' type="button" onclick="validateInput()">Invia</div>
+	</div>
+</body>
+</html>

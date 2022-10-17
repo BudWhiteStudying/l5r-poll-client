@@ -1,0 +1,49 @@
+body {
+	margin: 0px;
+	font-family: Calibri, sans-serif;
+	font-size: 16px;
+}
+.poll-container {
+	margin: 2vw;
+	padding: 2vw;
+	border: 1px solid black;
+	border-radius: 1vw;
+}
+.session-label {
+	font-weight: bold;
+	font-size: 20px;
+}
+.session-title-label {
+	font-style: italic;
+	font-size: 18px;
+}
+.section {
+	margin-top: 2vw;
+}
+.section-label {
+	font-weight: bold;
+}
+.section-input {
+	width: 100%;
+}
+.error-container {
+	margin: auto;
+	margin-top: 2vw;
+	padding: 2vw;
+	border: 1px solid red;
+	border-radius: 1vw;
+	display: none;
+}
+.submit-button {
+	color: white;
+	background-color: black;
+	margin: auto;
+	margin-top: 2vw;
+	width: 50px;
+	min-width: 50px;
+	height: 30px;
+	min-height: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
